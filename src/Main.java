@@ -29,7 +29,7 @@ public class Main {
                     3.Monitor
                     4.Discos duros
                     5.Memorias RAM
-                    6.Salir
+                    6.Generar factura
                     """);
 
             System.out.print("Que desea comprar: ");
@@ -61,12 +61,13 @@ public class Main {
                     System.out.print("Que cantidad de memorias RAM quiere: ");
                     cant5 = teclado.nextDouble();
                     total5 = 180000 * cant5;
-                    valort = total1 + total2 + total3 + total4 + total5;
-                    iva = valort*0.16;
-                    valortt = valort + iva;
+
                     break;
 
                 case 6:
+                    valort = total1 + total2 + total3 + total4 + total5;
+                    iva = valort*0.16;
+                    valortt = valort + iva;
                     System.out.println("FACTURA");
                     System.out.println("Nombre cliente: "+nom+ "  Telefono cliente: "+tel+ "  Fecha: "+ fec);
                     System.out.println("Producto:Mouse  cant: " + cant1 + "  valor unidad: 80.000 valor total: "+ total1);
